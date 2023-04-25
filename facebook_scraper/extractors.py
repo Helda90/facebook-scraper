@@ -1427,8 +1427,8 @@ class PostExtractor:
 class GroupPostExtractor(PostExtractor):
     """Class for extracting posts from Facebook Groups rather than Pages"""
 
-    post_url_regex = re.compile(r'https://m.facebook.com/groups/[^/]+/permalink/')
-    post_story_regex = re.compile(r'href="(https://m.facebook.com/groups/[^/]+/permalink/\d+/)')
+    post_url_regex = re.compile(r'https://facebook.com/groups/[^/]+/permalink/')
+    post_story_regex = re.compile(r'href="(https://facebook.com/groups/[^/]+/permalink/\d+/)')
 
 
 class PhotoPostExtractor(PostExtractor):
